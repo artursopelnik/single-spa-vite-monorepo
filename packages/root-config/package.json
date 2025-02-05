@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --noEmit && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -22,11 +22,11 @@
     "@types/react-dom": "^19.0.3",
     "@types/systemjs": "^6.15.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "vite-plugin-single-spa": "0.9.0",
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.23.0",
+    "vite-plugin-single-spa": "0.9.0"
   }
 }
