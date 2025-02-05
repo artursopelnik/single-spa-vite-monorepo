@@ -23,6 +23,6 @@ export const unmount = [cssLc.unmount, lc.unmount];
 /**
  * shared dependencies
  * these can be imported in other applications in this format:
- * import { title } from "@demo/util";
+ * import { title } from "@demo/mf-util";
  */
 export { title, DummyComponent } from "./utils";

@@ -15,7 +15,7 @@ const PORT = 3001;
 /** These are other single-spa applications, that are imported inside this application, as dependencies.
  * These externals are made available within this application via the root config import map.
  * For more details on why this is required see here: https://github.com/WJSoftware/vite-plugin-single-spa/discussions/160  */
-const APPLICATION_EXTERNALS: string[] = ["@demo/util"];
+const APPLICATION_EXTERNALS: string[] = ["@demo/mf-util"];
 
 /** These are NPM packages, which are imported via the root config import map, in the built environment */
 const NPM_EXTERNALS: string[] = ["react", "react-dom"];

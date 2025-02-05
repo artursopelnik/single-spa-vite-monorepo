@@ -2,7 +2,9 @@
 import {RegisterApplicationConfig} from "single-spa";
 
 export default <Omit<RegisterApplicationConfig, 'app'>[]>[
-  { name: "@demo/mf-home", activeWhen: "/" },
-  { name: "@demo/mf-util", activeWhen: "/" },
-  { name: "@demo/mf-blog", activeWhen: "/blog" },
+    {
+        name: "@demo/mf-home",
+        activeWhen: "/"
+    },
+    {name: "@demo/mf-blog", activeWhen: "/blog"},
 ]

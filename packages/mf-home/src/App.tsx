@@ -3,13 +3,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
 // this is made available via the root config import map
-import { title, DummyComponent } from "@demo/util";
+import { title, DummyComponent } from "@demo/mf-util";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", textAlign: "center", padding: '2rem' }}>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
