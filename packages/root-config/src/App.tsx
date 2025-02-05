@@ -8,11 +8,11 @@ function App() {
 
   return (
     <>
-      <h1>
-        Welcome to Boilerplate Single-Spa Vite Monorepo with Lerna, React
-        Typescript, HMR, SSR
-      </h1>
-      <div>
+        <h1>
+            Welcome to Boilerplate Single-Spa Vite Monorepo with Lerna, React
+            Typescript, HMR, SSR
+        </h1>
+        <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

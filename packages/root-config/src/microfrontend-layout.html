@@ -1,0 +1,16 @@
+<single-spa-router>
+    <div class="portal-compositor">
+        <h1>Welcome im Portal Compositor</h1>
+        <nav>
+            <application name="@org/navbar"></application>
+        </nav>
+        <main>
+            <route default>
+                <application name="@demo/welcome"></application>
+            </route>
+            <route path="blog">
+                <application name="@demo/blog"></application>
+            </route>
+        </main>
+    </div>
+</single-spa-router>

@@ -12,7 +12,12 @@ export default defineConfig(() => {
       react(),
       vitePluginSingleSpa({
         type: "root",
-        imo: "4.3.4",
+        imo: "5.1.1",
+        // imo: () => `https://my.cdn.example.com/import-map-overrides@5.1.1`,
+        importMaps: {
+          dev: ["src/importMap.dev.json", "src/importMap.shared.json"],
+          build: ["src/importMap.json", "src/importMap.shared.json"],
+        },
       }),
     ],
     server: {
