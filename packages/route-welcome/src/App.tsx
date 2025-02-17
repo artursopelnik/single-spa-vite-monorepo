@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
 // this is made available via the root config import map
-import { title, DummyComponent } from "@demo/mf-util";
+import { title, DummyComponent } from "@demo/partials";
 
 function App() {
   const [count, setCount] = useState(0);

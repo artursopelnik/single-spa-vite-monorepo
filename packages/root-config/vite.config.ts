@@ -28,26 +28,7 @@ export default defineConfig(() => {
     },
     define: {
       "process.env": process.env,
-    },
-    build: {
-      rollupOptions: {
-        input: {
-          index: "./index.html",
-          "root-config": "./src/main.tsx",
-        },
-        output: {
-          format: "system",
-          entryFileNames: "[name].js",
-          assetFileNames: "assets/[name][ext]",
-          globals: {
-            "single-spa": "singleSpa",
-            "single-spa-layout": "singleSpaLayout",
-          },
-        },
-        preserveEntrySignatures: "strict",
-        external: ["single-spa", "single-spa-layout"],
-      },
-    },
+    }
   }
   return config
 })

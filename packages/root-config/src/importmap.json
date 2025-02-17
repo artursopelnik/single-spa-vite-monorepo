@@ -1,7 +1,6 @@
 {
   "imports": {
-    "@demo/mf-home": "http://localhost:3001/src/spa.tsx",
-    "@demo/mf-util": "http://localhost:3002/src/spa.tsx",
-    "@demo/mf-blog": "http://localhost:3003/src/spa.tsx"
+    "@demo/route-welcome": "http://localhost:3001/src/spa.tsx",
+    "@demo/partials": "http://localhost:3002/src/spa.tsx"
   }
 }

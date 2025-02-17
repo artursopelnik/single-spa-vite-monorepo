@@ -25,11 +25,22 @@ export const mount = [cssLc.mount, lc.mount];
 export const unmount = [cssLc.unmount, lc.unmount];
 
 function domElementGetter() {
-    let el = document.getElementById("mf-home");
+    const APPLICATION_NAME = '@demo/route-welcome'
+    const APPLICATION_RENDERED_SUFFIX = 'rendered'
+    const APPLICATION_RENDERED_NAME = `${APPLICATION_NAME}_${APPLICATION_RENDERED_SUFFIX}`
+
+    let el = document.getElementById(APPLICATION_RENDERED_NAME);
     if (!el) {
         el = document.createElement('div');
-        el.id = 'mf-home';
-        document.body.appendChild(el);
+        el.id = APPLICATION_RENDERED_NAME;
+
+        const application = document.querySelector(`[id*="${APPLICATION_NAME}"]`)
+
+        if (application) {
+            application.appendChild(el);
+        } else {
+            document.body.appendChild(el);
+        }
     }
 
     return el;
